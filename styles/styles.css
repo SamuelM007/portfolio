@@ -86,3 +86,9 @@ section ul {
 div {
   border-top: 0.1rem black solid;
 }
+
+@media (max-width: 1029px) {
+  section {
+    margin: 1rem;
+  }
+}
