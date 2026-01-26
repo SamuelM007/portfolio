@@ -82,3 +82,7 @@ p {
 section ul {
   list-style-type: "- ";
 }
+
+div {
+  border-top: 0.1rem black solid;
+}
