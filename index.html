@@ -160,6 +160,25 @@
         </select>
         <label for="other">Other (please specify):</label>
         <input type="text" id="other" name="other" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+
+        <label for="mailing">
+          <input type="checkbox" id="mailing" name="mailing" />
+          Please add me to your mailing list
+        </label>
+        <span>Choose an email format:</span>
+        <label for="html">
+          <input type="radio" id="html" value="html" name="format" />
+          HTML
+        </label>
+        <label for="text">
+          <input type="radio" id="text" value="text" name="format" />
+          Text
+        </label>
+
+        <button type="submit" id="submit">Submit</button>
       </fieldset>
     </form>
   </body>
