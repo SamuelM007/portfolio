@@ -136,32 +136,32 @@
     <form>
       <fieldset>
         <legend>Contact Form</legend>
-        <label for="first-name" class="bio-info">
+        <label for="first-name" class="bio">
           First Name:<br />
           <input type="text" id="first-name" name="first-name" />
         </label>
 
-        <label for="last-name" class="bio-info">
+        <label for="last-name" class="bio">
           Last Name:<br />
           <input type="text" id="last-name" name="last-name" />
         </label>
 
-        <label for="job-title" class="bio-info">
+        <label for="job-title" class="bio">
           Job Title:<br />
           <input type="text" id="job-title" name="job-title" />
         </label>
 
-        <label for="company" class="bio-info">
+        <label for="company" class="bio">
           Company:<br />
           <input type="text" id="company" name="company" />
         </label>
 
-        <label for="linkedin" class="bio-info">
+        <label for="linkedin" class="bio">
           LinkedIn URL:<br />
           <input type="text" id="linkedin" name="linkedin" />
         </label>
 
-        <label for="email" class="bio-info">
+        <label for="email" class="bio">
           Email:<br />
           <input type="text" id="email" name="email" />
         </label>
@@ -177,24 +177,28 @@
           <input type="text" id="other" name="other" />
         </label>
 
-        <label for="message">
+        <label for="message" class="mail">
           Message<br />
           <textarea id="message" name="message" rows="5"></textarea>
         </label>
 
-        <label for="mailing">
+        <label for="mailing" class="mail">
           <input type="checkbox" id="mailing" name="mailing" />
           Please add me to your mailing list
         </label>
-        <span>Choose an email format:</span>
-        <label for="html">
-          <input type="radio" id="html" value="html" name="format" />
-          HTML
-        </label>
-        <label for="text">
-          <input type="radio" id="text" value="text" name="format" />
-          Text
-        </label>
+
+        <span class="mail">
+          Choose an email format:
+
+          <label for="html">
+            <input type="radio" id="html" value="html" name="format" />
+            HTML
+          </label>
+          <label for="text">
+            <input type="radio" id="text" value="text" name="format" />
+            Text
+          </label>
+        </span>
 
         <button type="submit" id="submit">Submit</button>
       </fieldset>
