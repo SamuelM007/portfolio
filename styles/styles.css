@@ -125,6 +125,7 @@ button {
   max-width: 75px;
 }
 
+/* @media */
 @media (max-width: 1029px) {
   section {
     margin: 1rem;
