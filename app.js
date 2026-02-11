@@ -2,14 +2,14 @@ import express from "express";
 
 const app = express();
 
-const PORT = 3000;
+const PORT = 2999;
 
 app.use(express.static("public"));
 
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  res.sendFile(`${import.meta.dirname}/views/home.html`);
+  res.sendFile(`${import.meta.dirname}/views/index.html`);
 });
 
 app.listen(PORT, () => {
