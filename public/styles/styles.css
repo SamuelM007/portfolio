@@ -102,6 +102,10 @@ fieldset {
   }
 }
 
+.error {
+  color: red;
+}
+
 form label {
   grid-column: span 3;
 }

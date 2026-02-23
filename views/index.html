@@ -6,6 +6,7 @@
     <title>Resume: Samuel Marchuk</title>
     <link rel="icon" href="images/icon1.png" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <script src="js/script.js" defer></script>
   </head>
   <body>
     <header>
@@ -133,7 +134,7 @@
         </div>
       </section>
     </main>
-    <form>
+    <form id="contact-form">
       <fieldset>
         <legend>Contact Form</legend>
         <label for="first-name" class="bio">
@@ -170,6 +171,8 @@
           How did we Meet?<br />
           <select id="meet" name="meet">
             <option value="none">Please Select</option>
+            <option value="school">School</option>
+            <option value="work">Work</option>
           </select>
         </label>
         <label for="other">
