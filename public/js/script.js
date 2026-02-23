@@ -9,7 +9,7 @@ document.getElementById("contact-form").onsubmit = () => {
       .getElementById("first-name")
       .insertAdjacentHTML(
         "beforebegin",
-        '<span class="error">ENTER FIRST NAME!</span>',
+        '<span class="error">Enter First Name!</span>',
       );
   }
 
@@ -20,7 +20,7 @@ document.getElementById("contact-form").onsubmit = () => {
       .getElementById("last-name")
       .insertAdjacentHTML(
         "beforebegin",
-        '<span class="error">ENTER LAST NAME!</span>',
+        '<span class="error">Enter Last Name!</span>',
       );
   }
 
@@ -34,7 +34,7 @@ document.getElementById("contact-form").onsubmit = () => {
       .getElementById("email")
       .insertAdjacentHTML(
         "beforebegin",
-        '<span class="error">ENTER VALID EMAIL!</span>',
+        '<span class="error">Enter Valid Email!</span>',
       );
   }
 
@@ -45,7 +45,7 @@ document.getElementById("contact-form").onsubmit = () => {
       .getElementById("linkedin")
       .insertAdjacentHTML(
         "beforebegin",
-        '<span class="error">ENTER VALID LINK!</span>',
+        '<span class="error">Enter Valid link!</span>',
       );
   }
 
@@ -56,7 +56,7 @@ document.getElementById("contact-form").onsubmit = () => {
       .getElementById("meet")
       .insertAdjacentHTML(
         "beforebegin",
-        '<span class="error">PLEASE SELECT!</span>',
+        '<span class="error">Please Select!</span>',
       );
   }
 
