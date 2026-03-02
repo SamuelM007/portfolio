@@ -6,6 +6,7 @@ body {
   max-width: 80%;
   margin: 0 auto;
   background-color: rgb(200, 228, 200);
+  padding-bottom: 3rem;
 }
 
 header {
@@ -16,6 +17,7 @@ header {
   justify-items: center;
   border-left: solid black 0.1rem;
   border-right: solid black 0.1rem;
+  margin-bottom: 3rem;
 }
 
 header img {

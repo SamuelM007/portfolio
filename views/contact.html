@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="images/img1.jpg" alt="profile picture" width="100" />
+      <h1>Samuel Marchuk</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li>
+            <a href="https://github.com/SamuelM007" target="_blank"> Github</a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/samuel-m-5a330a31b/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li><a href="/admin">Admin</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <form id="contact-form" action="/confirmation" method="post">
+      <fieldset>
+        <legend>Contact Form</legend>
+        <label for="first-name" class="bio">
+          First Name:<br />
+          <input type="text" id="first-name" name="firstName" />
+        </label>
+
+        <label for="last-name" class="bio">
+          Last Name:<br />
+          <input type="text" id="last-name" name="lastName" />
+        </label>
+
+        <label for="job-title" class="bio">
+          Job Title:<br />
+          <input type="text" id="job-title" name="job" />
+        </label>
+
+        <label for="company" class="bio">
+          Company:<br />
+          <input type="text" id="company" name="company" />
+        </label>
+
+        <label for="linkedin" class="bio">
+          LinkedIn URL:<br />
+          <input type="text" id="linkedin" name="linkedin" />
+        </label>
+
+        <label for="email" class="bio">
+          Email:<br />
+          <input type="text" id="email" name="email" />
+        </label>
+
+        <label for="meet">
+          How did we Meet?<br />
+          <select id="meet" name="meet">
+            <option value="none">Please Select</option>
+            <option value="school">School</option>
+            <option value="work">Work</option>
+          </select>
+        </label>
+        <label for="other">
+          Other (please specify):<br />
+          <input type="text" id="other" name="other" />
+        </label>
+
+        <label for="message" class="mail">
+          Message<br />
+          <textarea id="message" name="message" rows="5"></textarea>
+        </label>
+
+        <label for="mailing" class="mail">
+          <input type="checkbox" id="mailing" name="mailing" />
+          Please add me to your mailing list
+        </label>
+
+        <span class="mail">
+          Choose an email format:
+
+          <label for="html">
+            <input type="radio" id="html" value="html" name="format" />
+            HTML
+          </label>
+          <label for="text">
+            <input type="radio" id="text" value="text" name="format" />
+            Text
+          </label>
+        </span>
+        <!-- submit  -->
+        <button type="submit" id="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

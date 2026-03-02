@@ -6,6 +6,8 @@ const PORT = 2999;
 
 app.use(express.static("public"));
 
+app.set("view engine", "ejs");
+
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
@@ -21,8 +23,8 @@ app.post("/confirmation", (req, res) => {
     job: req.body.job,
     company: req.body.company,
     linkedin: req.body.linkedin,
-    email: req.body.linkedin,
-    met: req.body.meet,
+    email: req.body.email,
+    meet: req.body.meet,
     other: req.body.other,
     message: req.body.message,
     mailing: req.body.mailing,
@@ -35,7 +37,11 @@ app.post("/confirmation", (req, res) => {
 });
 
 app.get("/admin", (req, res) => {
-  res.send(Contacts);
+  res.render("admin", { Contacts });
+});
+
+app.get("/contact", (req, res) => {
+  res.sendFile(`${import.meta.dirname}/views/contact.html`);
 });
 
 app.listen(PORT, () => {

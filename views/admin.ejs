@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>admin</title>
+    <!-- Scripts -->
+    <script src="//code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="//cdn.datatables.net/2.3.7/js/dataTables.js"></script>
+    <script src="//cdn.datatables.net/responsive/3.0.2/js/dataTables.responsive.min.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="//cdn.datatables.net/2.3.7/css/dataTables.dataTables.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.datatables.net/responsive/3.0.2/css/responsive.dataTables.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="images/img1.jpg" alt="profile picture" width="100" />
+      <h1>Samuel Marchuk</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li>
+            <a href="https://github.com/SamuelM007" target="_blank"> Github</a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/samuel-m-5a330a31b/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li><a href="/admin">Admin</a></li>
+        </ul>
+      </nav>
+    </header>
+    <% if(Contacts.length > 0) { %>
+    <table id="order-table" class="display">
+        <thead>
+            <tr>
+                <th>Name</th>   
+                <th>Job</th>
+                <th>Company</th>
+                <th>LinkedIn</th>
+                <th>email</th>
+                <th>meet</th>
+                <th>other</th>
+                <th>message</th>
+                <th>mailing</th>
+                <th>format</th>
+                <th>timestamp</th>                   
+            </tr>
+        </thead>
+        <tbody>
+    <% Contacts.forEach(Contact => { %>
+        <tr>
+            <td><%= Contact.firstName %> <%= Contact.lastName %></td>
+            <td><%= Contact.job%></td>
+            <td><%= Contact.company%></td>
+            <td><%= Contact.linkedin%></td>
+            <td><%= Contact.email%></td>
+            <td><%= Contact.meet%></td>
+            <td><%= Contact.other%></td>
+            <td><%= Contact.message%></td>
+            <td><%= Contact.mailing%></td>
+            <td><%= Contact.format%></td>
+            <td><%= Contact.timestamp.toLocaleString() %></td>
+        </tr>
+    <% }) %>
+        </tbody>    
+    </table>
+    <% }else { %>
+      <p>Empty</p>
+    <% } %>
+  </body>
+</html>
