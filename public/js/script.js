@@ -39,7 +39,7 @@ document.getElementById("contact-form").onsubmit = () => {
   }
 
   let linkedin = document.getElementById("linkedin").value.trim();
-  if (linkedin && !linkedin.startsWith("https://linkedin.com/in/")) {
+  if (linkedin && !linkedin.contains("linkedin.com")) {
     isValid = false;
     document
       .getElementById("linkedin")

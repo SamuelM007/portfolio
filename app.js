@@ -34,15 +34,15 @@ app.post("/confirmation", async (req, res) => {
   const params = [
     req.body.firstName,
     req.body.lastName,
-    req.body.job,
-    req.body.company,
-    req.body.linkedin,
-    req.body.email,
+    req.body.job ? req.body.job : null,
+    req.body.company ? req.body.company : null,
+    req.body.linkedin ? req.body.linkedin : null,
+    req.body.email ? req.body.email : null,
     req.body.meet,
-    req.body.other,
-    req.body.message,
-    req.body.mailing,
-    req.body.format,
+    req.body.other ? req.body.other : null,
+    req.body.message ? req.body.message : null,
+    req.body.mailing ? req.body.mailing : null,
+    req.body.format ? req.body.format : null,
     new Date(),
   ];
 
@@ -73,7 +73,6 @@ app.get("/admin", async (req, res) => {
   const contacts = await pool.query(
     "Select * FROM contacts ORDER BY timestamp DESC",
   );
-  console.log(contacts);
   res.render("admin", { Contacts: contacts[0] });
 });
 
